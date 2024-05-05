@@ -22,91 +22,48 @@ class User extends AppModel {
 	 */
 	public $validate = array(
 		'id' => array(
-			'notEmpty' => array(
-				'rule' => array('notEmpty'),
-				//'message' => 'Your custom message here',
-				//'allowEmpty' => false,
-				//'required' => false,
-				//'last' => false, // Stop validation after this rule
-				//'on' => 'create', // Limit validation to 'create' or 'update' operations
+			'notBlank' => array(
+				'rule' => array('notBlank'),
 			),
 		),
 		'name' => array(
-			'notEmpty' => array(
-				'rule' => array('notEmpty'),
-				//'message' => 'Your custom message here',
-				//'allowEmpty' => false,
-				//'required' => false,
-				//'last' => false, // Stop validation after this rule
-				//'on' => 'create', // Limit validation to 'create' or 'update' operations
+			'notBlank' => array(
+				'rule' => array('notBlank'),
 			),
 			'rule'    => array('between', 4, 20),
 			'message' => 'name range 4-20 letters'
 		),
 		'username' => array(
-			'notEmpty' => array(
-				'rule' => array('notEmpty'),
-				//'message' => 'Your custom message here',
-				//'allowEmpty' => false,
-				//'required' => false,
-				//'last' => false, // Stop validation after this rule
-				//'on' => 'create', // Limit validation to 'create' or 'update' operations
+			'notBlank' => array(
+				'rule' => array('notBlank'),
 			),
 			'isunique'=>array(
 				'rule'=>array('isunique'),
 				'message' => 'Username already taken',
 			),
-			/*
-			'rule' => array('maxLength', 10),
-    		'message' => "username range max 10",
-    		*/
 			'rule'    => array('between', 4, 20),
 			'message' => 'username range 4-20 letters'
 		),
 		'password' => array(
-			'notEmpty' => array(
-				'rule' => array('notEmpty'),
-				//'message' => 'Your custom message here',
-				//'allowEmpty' => false,
-				//'required' => false,
-				//'last' => false, // Stop validation after this rule
-				//'on' => 'create', // Limit validation to 'create' or 'update' operations
+			'notBlank' => array(
+				'rule' => array('notBlank'),
 			),
 		),
 		'mail' => array(
 			'email' => array(
 				'rule' => array('email'),
 				'message' => 'Enter a valid email address',
-				//'allowEmpty' => false,
-				//'required' => false,
-				//'last' => false, // Stop validation after this rule
-				//'on' => 'create', // Limit validation to 'create' or 'update' operations
 			),
-			'notEmpty' => array(
-				'rule' => array('notEmpty'),
-				//'message' => 'Your custom message here',
-				//'allowEmpty' => false,
-				//'required' => false,
-				//'last' => false, // Stop validation after this rule
-				//'on' => 'create', // Limit validation to 'create' or 'update' operations
+			'notBlank' => array(
+				'rule' => array('notBlank'),
 			),
 		),
 		'datetime' => array(
 			'datetime' => array(
 				'rule' => array('datetime'),
-				//'message' => 'Your custom message here',
-				//'allowEmpty' => false,
-				//'required' => false,
-				//'last' => false, // Stop validation after this rule
-				//'on' => 'create', // Limit validation to 'create' or 'update' operations
 			),
-			'notEmpty' => array(
-				'rule' => array('notEmpty'),
-				//'message' => 'Your custom message here',
-				//'allowEmpty' => false,
-				//'required' => false,
-				//'last' => false, // Stop validation after this rule
-				//'on' => 'create', // Limit validation to 'create' or 'update' operations
+			'notBlank' => array(
+				'rule' => array('notBlank'),
 			),
 		),
 	);
