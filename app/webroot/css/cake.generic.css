@@ -81,19 +81,19 @@ p {
 }
 #header h1 {
 	line-height:20px;
-	background: #003d4c url('../img/cake.icon.png') no-repeat left;
+	/*background: #003d4c url('../img/cake.icon.png') no-repeat left;*/
 	color: #fff;
 	padding: 0 30px;
 }
 #header h1 a {
 	color: #fff;
-	background: #003d4c;
+	/*background: #003d4c;*/
 	font-weight: normal;
 	text-decoration: none;
 }
 #header h1 a:hover {
 	color: #fff;
-	background: #003d4c;
+	/*background: #003d4c;*/
 	text-decoration: underline;
 }
 #content{
